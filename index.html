@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>coding</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav id="sidenav">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+        <img class="menu" src="pictures/more.png" alt="" id="menuBtn">
+        <div class="text-box">
+            <h1>Welcome to Our Coding Academy</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, lacus et semper gravida, est
+                lacus dignissim tortor, congue vehicula massa diam in dui. Curabitur arcu elit, finibus quis
+                malesuada in, blandit ut lorem. Quisque aliquet leo vel eros ullamcorper, non volutpat lectus
+                congue.<br> Ut eget felis laoreet, lobortis orci at, lacinia ligula. Vivamus fringilla ornare leo ut
+                commodo.</p>
+            <a href="" class="mybtn">Visit Us to Know More</a>
+        </div>
+    </section>
+
+    <section id="courses">
+        <h1>Courses We Offer</h1>
+        <p>Here's a complete list of all the courses we foer at our prestiious academy</p>
+        <div class="row">
+            <div class="course-col">
+                <img src="pictures/pexels-pixabay-416343.jpg" alt="">
+                <h3>Web development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, lacus et semper gravida,
+                    est
+                    lacus dignissim tortor, congue vehicula massa diam in dui.</p>
+            </div>
+            <div class="course-col">
+                <img src="pictures/pexels-pixabay-270360.jpg" alt="ethical">
+                <h3>Ethical Hacking</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, lacus et semper gravida,
+                    est
+                    lacus dignissim tortor, congue vehicula massa diam in dui.</p>
+            </div>
+            <div class="course-col">
+                <img src="pictures/pexels-bich-tran-669996.jpg" alt="Cs">
+                <h3>Cyber Security</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, <br>lacus et semper gravida,
+                    est
+                    lacus dignissim tortor, congue vehicula massa diam in dui.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h1>What Our Sudent Say</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, lacus et semper gravida,
+            est
+            lacus dignissim tortor, congue vehicula massa diam in dui.</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="pictures/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="Student">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, <br>lacus et semper
+                        gravida,
+                        est
+                        lacus dignissim tortor, congue vehicula massa diam in dui.</p>
+                    <small>Chinaza N.</small>
+                </div>
+            </div>
+<div class="testimonials-col">
+                <img src="pictures/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="Student">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, <br>lacus et semper
+                        gravida,
+                        est
+                        lacus dignissim tortor, congue vehicula massa diam in dui.</p>
+                    <small>Chinaza N.</small>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="pictures/remi-turcotte-usSV8umsRDA-unsplash.jpg" alt="Student">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, <br>lacus et semper
+                        gravida,
+                        est
+                        lacus dignissim tortor, congue vehicula massa diam in dui.</p>
+                    <small>GodsWill O.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h1>Enroll for Our Various Courses Online<br>Anywhere from the World</h1>
+        <a href="" class="mybtn">CONTACT US</a>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Etiam mattis, lacus et semper
+            gravida,<br>est
+        </p>
+        <p>For more info, contact us @+2349070875718.</p>
+        <small>Copyright @ CodewithMageX</small>
+    </section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sidenav = document.getElementById("sidenav");
+
+        sidenav.style.right = "-250px;"
+        menuBtn.onclick = function () {
+            if (sidenav.style.right == "-250px") {
+                sidenav.style.right = "0";
+            }
+            else {
+                sidenav.style.right = "-250px";
+            }
+        }
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+    </script>
+
+</body>
+
+</html>
